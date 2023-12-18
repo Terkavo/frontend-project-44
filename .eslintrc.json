@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser":"@babel/eslint-parser",
+    "requireConfigFile": false, // <== ADD THIS
+    "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module" // Allows for the use of imports
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "**/**.scss",
+    "src/assets/**"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended"
+      ],
+      "rules": {
+        "no-constant-condition": [
+          "error",
+          {
+            "checkLoops": false
+          }
+        ],
+        "quotes": [
+          "error",
+          "double",
+          {
+            "allowTemplateLiterals": true,
+            "avoidEscape": true
+          }
+        ],
+        "semi": [
+          "error",
+          "always"
+        ],
+        "prefer-const": [
+          "off"
+        ],
+        "no-empty-function": [
+          "off"
+        ],
+        "no-multiple-empty-lines": [
+          "error"
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+      ],
+      "rules": {}
+    }
+  ]
+}

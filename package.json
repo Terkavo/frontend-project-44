@@ -1,0 +1,32 @@
+{
+  "name": "very-brain",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "[![Actions Status](https://github.com/Terkavo/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Terkavo/frontend-project-44/actions)",
+  "main": "index.js",
+  "scripts": {
+    "biuld": "npx tsc /bin;npx tsc /src;",
+    "brain": " ts-node bin/brain-games.js",
+    "lint": "eslint -- src/",
+    "lintfix": "eslint --fix src/ "
+  },
+  "author": "",
+  "license": "MIT",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "cross-env": "^7.0.3",
+    "random": "^4.1.0",
+    "readline-sync": "^1.4.10",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.55.0",
+    "ts-node": "^10.9.1"
+  }
+}
