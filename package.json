@@ -1,5 +1,5 @@
 {
-  "name": "very-brain",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/Terkavo/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Terkavo/frontend-project-44/actions)",
@@ -13,7 +13,8 @@
   "author": "",
   "license": "MIT",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
     "random": "^4.1.0",
