@@ -5,8 +5,8 @@
   "description": "[![Actions Status](https://github.com/Terkavo/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Terkavo/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "biuld": "npx tsc /bin;npx tsc /src;",
-    "brain": " ts-node bin/brain-games.js",
+    "brain": " node bin/brain-games.js",
+    "brain-even": "node bin/brain-even.js",
     "lint": "eslint -- src/",
     "lintfix": "eslint --fix src/ "
   },
@@ -14,7 +14,11 @@
   "license": "MIT",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
     "random": "^4.1.0",
