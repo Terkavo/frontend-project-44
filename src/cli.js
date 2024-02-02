@@ -1,11 +1,7 @@
 import * as readlineSync from "readline-sync";
 export class Cli {
     static start(logic) {
-        console.log("Привет в мозговитой игре");
-        this.Name = readlineSync.question("Как звать тебя, пуник? ", {
-            encoding: "UTF-8"
-        });
-        console.log(`Ну здарова ${this.Name}`);
+        startName();
         console.log(logic.WriteoOnStart);
         for (let i = 0; i <= 2; i++) {
             let generatedQuestion = logic.GenerateQuestion();
@@ -22,4 +18,11 @@ export class Cli {
         }
         console.log(`Congratulations, ${this.Name}'`);
     }
+    static startName(){
+    console.log("Welcome to the Brain Games!");
+    this.Name = readlineSync.question("May I have your name? ", {
+        encoding: "UTF-8"
+    });
+    console.log(`Ну здарова ${this.Name}`);
+ }
 }
