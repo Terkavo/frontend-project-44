@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { Cli } from "../src/cli";
+import { Cli } from "../src/cli.js";
 
-console.log("Welcome to the Brain Games!");
 Cli.startName();
