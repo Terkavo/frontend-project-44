@@ -23,6 +23,6 @@ export class Cli {
     this.Name = readlineSync.question("May I have your name? ", {
         encoding: "UTF-8"
     });
-    console.log(`Ну здарова ${this.Name}`);
+    console.log(`Hello, ${this.Name}`);
  }
 }
